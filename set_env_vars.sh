@@ -1,4 +1,13 @@
 #!/usr/bin/env bash
+export AUTHENTICATOR_ID="app-path"
+export CONJUR_ACCOUNT="admin"
+export CONJUR_ADMIN_PASSWORD="YOUKNOW"
+export CONJUR_NAMESPACE_NAME="conjur-follower-namespace"
+export DOCKER_REGISTRY_URL="https://quay.io"
+export DOCKER_REGISTRY_PATH="robin.mohan/kubernetes-conjur-demo"
+export PLATFORM="openshift"
+export TEST_APP_DATABASE="mysql"
+export TEST_APP_NAMESPACE_NAME="rmohanconjur"
 
 # Set the default values of environment variables used by the scripts
 export PULL_DOCKER_REGISTRY_URL=${PULL_DOCKER_REGISTRY_URL:-${DOCKER_REGISTRY_URL}}
